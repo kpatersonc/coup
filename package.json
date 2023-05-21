@@ -16,7 +16,7 @@
     "build": "cd client/core && yarn build && cd .. && yarn build && cd .. && yarn build-server",
     "start-client": "node start-client.js",
     "start-mobile": "cd client && expo install expo-font && cd .. && node start-mobile.js",
-    "start": "yarn build-server && concurrently \"yarn serve\" \"yarn start-client\" \"yarn start-mobile\"",
+    "start": "yarn build-server && concurrently \"yarn serve\" \"yarn start-client\"",
     "serve": "node dist/server/server.js",
     "debug": "yarn build-server && yarn watch-debug",
     "watch-node": "nodemon dist/server/server.js",
